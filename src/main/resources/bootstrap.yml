@@ -1,5 +1,3 @@
 spring:
-  application:
-    name: customerms
   config:
     import: configserver:http://localhost:8888
