@@ -17,13 +17,13 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping("/customers")
+    @GetMapping("/customers")
     public List<Customer> getAllCustomers() {
         logger.info("Getting all customers");
         return customerService.getAllCustomers();
     }
 
-    @RequestMapping("/customer/{email}")
+    @GetMapping("/customer/email/{email}")
     public Customer getCustomer(@PathVariable ("email") String email) {
         logger.info("Getting customer with email: " + email);
         return customerService.getCustomerById(email);
