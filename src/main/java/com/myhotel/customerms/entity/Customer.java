@@ -4,10 +4,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.ToString;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity(name = "customer")
+@NoArgsConstructor
 @AllArgsConstructor
 public class Customer {
 
